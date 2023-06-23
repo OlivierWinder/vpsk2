@@ -61,12 +61,14 @@
 
     &__text{
 
+        height: 50vh;
         display: flex;
         flex-direction: column;
         gap: 2rem;
         height: fit-content;
         @media (max-width: 949px){
             order: 2;
+            height: 50vh;
         }
         
         ul{
