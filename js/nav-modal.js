@@ -1,5 +1,4 @@
 let button = document.querySelector('.header__modal-button');
-console.log(button)
 
 function toggleModal(){
     let navModal = document.querySelector('.nav-modal');
