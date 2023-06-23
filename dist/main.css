@@ -161,11 +161,35 @@ h6 {
   color: #1f1f1f;
   transition: background-color 0.3s ease-in-out;
 }
+.header__logo {
+  color: white;
+  font-weight: 600;
+}
 .header__nav__list {
   text-transform: capitalize;
   display: flex;
   gap: 4rem;
   font-size: 1rem;
+  font-weight: 500;
+  color: #FDFDFD;
+}
+.header__modal-button {
+  color: white;
+}
+.header__modal-button--black {
+  color: black;
+}
+
+.header__modal-button__close {
+  color: black;
+}
+
+.nav--active {
+  color: black;
+}
+
+.header__logo--active {
+  color: black;
 }
 
 .footer {
@@ -222,7 +246,7 @@ h6 {
   border-radius: 20px;
   border: 2px solid #55C1BF;
   color: #55C1BF;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 @media (max-width: 950px) {
@@ -296,6 +320,9 @@ h6 {
 .header__modal-button .header__modal-button__close {
   display: none;
 }
+.header__modal-button .material-symbols-rounded {
+  font-weight: 800 !important;
+}
 
 .header__modal-button--active .header__modal-button__menu {
   display: none;
@@ -318,6 +345,10 @@ h6 {
   .divider {
     display: block;
   }
+}
+
+button {
+  font-weight: 600;
 }
 
 .hero {
@@ -371,7 +402,7 @@ h6 {
 }
 .hero__content__text__subheading {
   font-family: "Spectral", serif;
-  font-weight: 300;
+  font-weight: 400;
 }
 .hero__content__text__button {
   background-color: #55C1BF;
@@ -448,6 +479,7 @@ h6 {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  margin-top: 3rem;
 }
 @media (max-width: 949px) {
   .section1 {
@@ -455,8 +487,7 @@ h6 {
   }
 }
 .section1__heading {
-  font-family: "Spectral", serif;
-  font-weight: 200;
+  font-weight: 400;
 }
 @media (max-width: 949px) {
   .section1__heading {
@@ -519,10 +550,15 @@ h6 {
   flex-direction: column;
   gap: 2rem;
   margin-bottom: 64px;
+  margin-top: 3rem;
+}
+@media (max-width: 949px) {
+  .section2 {
+    margin-top: unset;
+  }
 }
 .section2__heading {
-  font-family: "Spectral", serif;
-  font-weight: 200;
+  font-weight: 400;
   text-align: right;
 }
 @media (max-width: 949px) {
@@ -555,7 +591,7 @@ h6 {
   }
 }
 .section2__content__image {
-  height: 50vh;
+  height: 70vh;
 }
 @media (max-width: 949px) {
   .section2__content__image {

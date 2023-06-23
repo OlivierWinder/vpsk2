@@ -34,7 +34,8 @@
     }
 
     &__logo{
-        // background-color: blue;
+        color: white;
+        font-weight: 600;
     } 
 
     &__nav{
@@ -45,6 +46,27 @@
             display: flex;
             gap: 4rem;
             font-size: u.$h6;
+            font-weight: 500;
+            color: u.$white;
+
         }
     }
+
+    &__modal-button{
+        color: white;
+    }
+    &__modal-button--black{
+        color: black;
+    }
+}
+
+.header__modal-button__close{
+    color: black;
+}
+
+.nav--active{
+    color: black;
+}
+.header__logo--active{
+    color: black;
 }

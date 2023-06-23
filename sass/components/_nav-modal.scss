@@ -54,8 +54,12 @@
 
 // header nav modal active
 .header__modal-button{
+    
     .header__modal-button__close{
         display: none;
+    }
+    .material-symbols-rounded{
+        font-weight: 800 !important;
     }
 }
 

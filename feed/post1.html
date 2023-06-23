@@ -6,36 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../dist/main.css">
-    <title>Feed</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Post</title>
+
 </head>
 
 <body>
-
+    <!-- header -->
     <header class="header">
         <div class="header__logo">
             <a href="../index.html">
-                <h3 class="header__logo__heading">
+                <h3 class="header__logo__heading header__logo--active">
                     LOGO
                 </h3>
             </a>
         </div>
-
+    
         <nav class="header__nav">
-            <ul class="header__nav__list">
+            <ul class="header__nav__list nav--active">
                 <li class="header__nav__list__item">
-                    <a href="../vertrouwenspersoon.html">Vertrouwenspersoon</a>
+                    <a href="../vertrouwenspersoon.html"
+                        class="header__nav__list__item--vertrouwenspersoon">vertrouwenspersoon</a>
                 </li>
                 <li class="header__nav__list__item">
-                    <a href="../over.html">over mij</a>
-                </li>
-                <li class="header__nav__list__item header__nav__list__item--feed">
-                    <a href="../feed.html">feed</a>
+                    <a href="../over.html" class="header__nav__list__item--over">over mij</a>
                 </li>
                 <li class="header__nav__list__item">
-                    <a href="../contact.html">contact</a>
+                    <a href="../feed.html" class="header__nav__list__item--feed">feed</a>
+                </li>
+                <li class="header__nav__list__item">
+                    <a href="../contact.html" class="header__nav__list__item--contact">contact</a>
                 </li>
             </ul>
         </nav>
+    
+        <button class="header__modal-button header__modal-button--black">
+            <span class="material-symbols-rounded header__modal-button__menu">
+                menu
+            </span>
+            <span class="material-symbols-rounded header__modal-button__close">
+                close
+            </span>
+        </button>
     </header>
     <!-- end header -->
 
